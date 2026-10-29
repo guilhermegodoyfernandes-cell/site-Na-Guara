@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Na'Guara — Tequeños e Arepas Venezuelanas</title>
+  <meta name="description" content="Tequeños crocantes, arepas feitas na hora e o sabor de casa. Peça delivery em São Paulo ou retire na loja.">
+  <meta name="theme-color" content="#f8b93f">
+  <meta name="color-scheme" content="light">
+  <meta name="application-name" content="Na'Guara">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Na'Guara">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Na'Guara — Tequeños e Arepas Venezuelanas">
+  <meta property="og:description" content="O sabor de casa em cada mordida. Tequeños crocantes e arepas feitas na hora.">
+  <meta property="og:image" content="assets/images/hero-tequenos.webp">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/images/hero-tequenos-480.webp" imagesrcset="assets/images/hero-tequenos-480.webp 480w, assets/images/hero-tequenos-600.webp 600w, assets/images/hero-tequenos.webp 900w" imagesizes="(min-width: 760px) 36vw, 74vw" fetchpriority="high">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="announcement" role="region" aria-label="Aviso de delivery">
+    <p>
+      <span class="announcement__pulse" aria-hidden="true"></span>
+      Delivery em São Paulo
+      <span class="announcement__sep" aria-hidden="true">·</span>
+      Frete grátis acima de R$ 80
+      <a href="#menu">Ver menu <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="#topo">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <rect width="64" height="64" rx="19" fill="#f8b93f"/>
+            <circle cx="32" cy="33" r="21" fill="#2b1a12"/>
+            <path d="M22.5 44V27.8c0-5.4 8.5-5.4 8.5 0v8.3c0 5.4 8.5 5.4 8.5 0V26.5" fill="none" stroke="#fff7e8" stroke-width="4.2" stroke-linecap="round"/>
+            <circle cx="47.5" cy="15.5" r="5" fill="#d95332"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>Na'Guara</strong>
+          <small>Comida venezolana</small>
+        </span>
+        <span class="sr-only">— voltar ao início</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#menu">Menu</a>
+        <a href="#historia">Nossa história</a>
+        <a href="#depoimentos">Avaliações</a>
+        <a href="#visite">Visite</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn--ghost install-header" id="install-header" type="button" hidden>
+          <svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg>
+          Instalar app
+        </button>
+        <button class="icon-btn cart-button" id="cart-toggle" type="button" aria-label="Abrir sacola" aria-haspopup="dialog" aria-controls="cart-dialog">
+          <svg class="icon" aria-hidden="true"><use href="#icon-bag"></use></svg>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </button>
+        <a class="btn btn--primary header-order" href="#menu">
+          Pedir agora
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__texture" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            Hecho en Venezuela · feito em São Paulo
+          </p>
+          <h1 class="reveal" id="hero-title">
+            O sabor de <em>casa</em> em cada mordida.
+          </h1>
+          <p class="hero__lead reveal">
+            Tequeños douradinhos, arepas feitas na hora e aquele tempero que abraça.
+            Comida de verdade, feita com calma e com amor.
+          </p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary btn--lg" href="#menu">
+              Ver o menu
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-down-right"></use></svg>
+            </a>
+            <button class="btn btn--soft btn--lg" type="button" data-open-cart>
+              <svg class="icon" aria-hidden="true"><use href="#icon-bag"></use></svg>
+              Minha sacola
+            </button>
+          </div>
+          <div class="hero__proof reveal" aria-label="Destaques da loja">
+            <span class="avatar-stack" aria-hidden="true">
+              <span>M</span><span>J</span><span>A</span>
+            </span>
+            <span><strong>4,9</strong> <span class="stars" aria-label="5 estrelas">★★★★★</span><br><small>+320 pedidos felizes</small></span>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__sun" aria-hidden="true"></div>
+          <div class="hero__main-photo">
+            <img src="assets/images/hero-tequenos-480.webp" srcset="assets/images/hero-tequenos-480.webp 480w, assets/images/hero-tequenos-600.webp 600w, assets/images/hero-tequenos.webp 900w" sizes="(min-width: 760px) 36vw, 74vw" alt="Tequeños dourados recheados com queijo derretido" width="900" height="900" fetchpriority="high">
+          </div>
+          <div class="hero__small-photo">
+            <img src="assets/images/hero-arepa-360.webp" srcset="assets/images/hero-arepa-360.webp 360w, assets/images/hero-arepa.webp 700w" sizes="(min-width: 760px) 16vw, 34vw" alt="Arepa reina pepiada com abacate" width="700" height="700" loading="lazy">
+          </div>
+          <div class="hero__sticker" aria-hidden="true">
+            <svg viewBox="0 0 100 100">
+              <defs>
+                <path id="sticker-circle" d="M50,50 m-34,0 a34,34 0 1,1 68,0 a34,34 0 1,1 -68,0"/>
+              </defs>
+              <text><textPath href="#sticker-circle">feito na hora · feito com amor · </textPath></text>
+              <path d="M50 28l4.6 12.2L67 45l-12.4 4.8L50 62l-4.6-12.2L33 45l12.4-4.8z" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="hero__mini-card">
+            <span class="hero__mini-icon" aria-hidden="true">
+              <svg class="icon"><use href="#icon-flame"></use></svg>
+            </span>
+            <span><strong>Quentinho</strong><small>saindo da chapa</small></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="trust-strip reveal" aria-label="Por que escolher a Na'Guara">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-wheat"></use></svg>
+            <span><strong>Massa artesanal</strong><small>feita todos os dias</small></span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-cheese"></use></svg>
+            <span><strong>Queijo de verdade</strong><small>e muito recheio</small></span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-scooter"></use></svg>
+            <span><strong>Entrega rápida</strong><small>em até 40 minutos</small></span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-heart"></use></svg>
+            <span><strong>Receita de família</strong><small>direto de Caracas</small></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Nuestro menú</p>
+            <h2 id="menu-title">Escolha a sua <em>felicidade</em>.</h2>
+          </div>
+          <p class="section-heading__lead">Tudo é preparado na hora. É só escolher, adicionar à sacola e a gente cuida do resto.</p>
+        </div>
+
+        <div class="menu-toolbar reveal">
+          <div class="tabs" role="tablist" aria-label="Categorias do menu">
+            <button class="tab is-active" id="tab-populares" role="tab" aria-selected="true" aria-controls="product-grid" tabindex="0" data-category="populares">Mais pedidos</button>
+            <button class="tab" id="tab-tequeños" role="tab" aria-selected="false" aria-controls="product-grid" tabindex="-1" data-category="tequeños">Tequeños</button>
+            <button class="tab" id="tab-arepas" role="tab" aria-selected="false" aria-controls="product-grid" tabindex="-1" data-category="arepas">Arepas</button>
+            <button class="tab" id="tab-combos" role="tab" aria-selected="false" aria-controls="product-grid" tabindex="-1" data-category="combos">Combos</button>
+            <button class="tab" id="tab-bebidas" role="tab" aria-selected="false" aria-controls="product-grid" tabindex="-1" data-category="bebidas">Bebidas</button>
+          </div>
+          <span class="menu-toolbar__note">
+            <svg class="icon" aria-hidden="true"><use href="#icon-leaf"></use></svg>
+            Opções vegetarianas disponíveis
+          </span>
+        </div>
+
+        <div class="product-grid" id="product-grid" role="tabpanel" aria-labelledby="tab-populares" tabindex="0" aria-live="polite"></div>
+
+        <div class="menu-note reveal">
+          <svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg>
+          <p>Alguma alergia ou restrição? Escreva para a gente no WhatsApp antes de pedir. Preparamos com cuidado, mas nossa cozinha manipula leite, trigo, ovos e derivados.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="historia" aria-labelledby="story-title">
+      <div class="container story-grid">
+        <div class="story-visual reveal">
+          <div class="story-visual__photo">
+            <img src="assets/images/arepa-carne-640.webp" srcset="assets/images/arepa-carne-640.webp 640w, assets/images/arepa-carne.webp 900w" sizes="(min-width: 760px) 44vw, 90vw" alt="Arepa de carne desfiada com queijo" width="900" height="675" loading="lazy">
+          </div>
+          <div class="story-visual__badge">
+            <span aria-hidden="true">“</span>
+            <p>Nada como comer com os olhos fechados e lembrar de casa.</p>
+          </div>
+          <div class="story-visual__stamp" aria-hidden="true">
+            <strong>100%</strong>
+            <span>hecho a mano</span>
+          </div>
+        </div>
+        <div class="story-copy reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Nuestra historia</p>
+          <h2 id="story-title">Da Venezuela para a sua <em>mesa</em>.</h2>
+          <p>A Na'Guara nasceu da saudade mais gostosa que existe: a de casa. Das arepas de domingo, do cheiro de tequeño fritando e da mesa cheia de gente.</p>
+          <p>Hoje, a gente traz esse afeto para São Paulo em receitas de família, ingredientes escolhidos com carinho e porções generosas. Porque comer bem também é um jeito de se sentir em casa.</p>
+          <ul class="story-list">
+            <li><span aria-hidden="true">01</span> Massas e arepas preparadas diariamente</li>
+            <li><span aria-hidden="true">02</span> Temperos e molhos da nossa cozinha</li>
+            <li><span aria-hidden="true">03</span> Embalagem térmica para chegar quentinho</li>
+          </ul>
+          <a class="link-arrow" href="#menu">Conhecer o cardápio <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps-section" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Fácil assim</p>
+            <h2 id="steps-title">Do nosso fogão para <em>você</em>.</h2>
+          </div>
+        </div>
+        <ol class="steps-grid">
+          <li class="step-card reveal">
+            <span class="step-card__number">01</span>
+            <div class="step-card__icon" aria-hidden="true"><svg class="icon"><use href="#icon-menu"></use></svg></div>
+            <h3>Escolha seus favoritos</h3>
+            <p>Navegue pelo menu e adicione os tequeños, arepas e bebidas que mais te chamam.</p>
+          </li>
+          <li class="step-card reveal">
+            <span class="step-card__number">02</span>
+            <div class="step-card__icon" aria-hidden="true"><svg class="icon"><use href="#icon-chat"></use></svg></div>
+            <h3>Confirme pelo WhatsApp</h3>
+            <p>Preencha seu nome e endereço. O pedido chega prontinho para a nossa equipe.</p>
+          </li>
+          <li class="step-card reveal">
+            <span class="step-card__number">03</span>
+            <div class="step-card__icon" aria-hidden="true"><svg class="icon"><use href="#icon-smile"></use></svg></div>
+            <h3>Receba e aproveite</h3>
+            <p>Delivery quentinho ou retirada na loja. Agora é só abrir, compartilhar e se deliciar.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="depoimentos" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Quem prova, volta</p>
+            <h2 id="testimonials-title">Abraços em forma de <em>comida</em>.</h2>
+          </div>
+          <div class="rating-summary" aria-label="Nota média 4,9 de 5">
+            <span class="rating-summary__value">4,9</span>
+            <span><span class="stars" aria-hidden="true">★★★★★</span><small>+320 avaliações</small></span>
+          </div>
+        </div>
+        <div class="testimonials-track">
+          <figure class="testimonial-card reveal">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“O tequeño mais crocante que já comi fora da Venezuela. A reina pepiada então… me emocionei.”</blockquote>
+            <figcaption><span class="testimonial-avatar" aria-hidden="true">C</span><span><strong>Camila M.</strong><small>Cliente desde 2023</small></span></figcaption>
+          </figure>
+          <figure class="testimonial-card reveal">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“Pedi o combo família no domingo e virou tradição aqui em casa. Chegou quentinho e muito bem embalado.”</blockquote>
+            <figcaption><span class="testimonial-avatar testimonial-avatar--green" aria-hidden="true">R</span><span><strong>Rafael A.</strong><small>Pedido via delivery</small></span></figcaption>
+          </figure>
+          <figure class="testimonial-card reveal">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“Atendimento gentil, porções generosas e aquele sabor de comida feita por alguém que ama o que faz.”</blockquote>
+            <figcaption><span class="testimonial-avatar testimonial-avatar--red" aria-hidden="true">V</span><span><strong>Valentina S.</strong><small>Retirou na loja</small></span></figcaption>
+          </figure>
+        </div>
+        <p class="swipe-hint" aria-hidden="true">Deslize para ver mais <span>→</span></p>
+      </div>
+    </section>
+
+    <section class="install-section" id="instalar" aria-labelledby="install-title">
+      <div class="container install-card">
+        <div class="install-copy reveal">
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__dot" aria-hidden="true"></span>Na'Guara no seu bolso</p>
+          <h2 id="install-title">Seu pedido, a um <em>toque</em>.</h2>
+          <p>Instale o app da Na'Guara e acesse o cardápio mesmo quando a internet resolver dar uma pausa. Rápido, leve e sem passar pela loja de aplicativos.</p>
+          <div class="install-actions">
+            <button class="btn btn--cream btn--lg" id="install-cta" type="button">
+              <svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg>
+              Instalar aplicativo
+              <span class="btn__spark" aria-hidden="true">✨</span>
+            </button>
+            <span class="install-hint" id="install-hint">Funciona no Android, iPhone e computador.</span>
+          </div>
+        </div>
+        <div class="phone-preview reveal" aria-hidden="true">
+          <div class="phone-preview__frame">
+            <div class="phone-preview__notch"></div>
+            <div class="phone-preview__screen">
+              <div class="phone-preview__top">
+                <span class="phone-preview__brand">Na'Guara</span>
+                <span class="phone-preview__bag"><svg class="icon"><use href="#icon-bag"></use></svg></span>
+              </div>
+              <div class="phone-preview__hero">
+                <small>hecho en venezuela</small>
+                <strong>O sabor de casa</strong>
+                <span class="phone-preview__pill">Pedir agora →</span>
+              </div>
+              <div class="phone-preview__cards">
+                <span></span><span></span>
+              </div>
+              <div class="phone-preview__nav">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <span class="phone-preview__float phone-preview__float--one">🔥 quentinho</span>
+          <span class="phone-preview__float phone-preview__float--two">4,9 ★</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit-section" id="visite" aria-labelledby="visit-title">
+      <div class="container visit-grid">
+        <div class="visit-copy reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Venha nos visitar</p>
+          <h2 id="visit-title">Tem lugar na nossa <em>mesa</em>.</h2>
+          <p>Passa para um café, leva uma arepa para o caminho ou fica um pouco. A gente adora conversar — e servir.</p>
+          <div class="visit-info">
+            <div class="visit-info__item">
+              <span class="visit-info__icon" aria-hidden="true"><svg class="icon"><use href="#icon-pin"></use></svg></span>
+              <span><strong>Endereço</strong><small>Rua das Palmeiras, 128 · Vila Madalena<br>São Paulo — SP</small></span>
+            </div>
+            <div class="visit-info__item">
+              <span class="visit-info__icon" aria-hidden="true"><svg class="icon"><use href="#icon-clock"></use></svg></span>
+              <span><strong>Horários</strong><small>Ter–Qui · 11h30–21h<br>Sex–Dom · 11h30–23h</small></span>
+            </div>
+            <div class="visit-info__item">
+              <span class="visit-info__icon" aria-hidden="true"><svg class="icon"><use href="#icon-phone"></use></svg></span>
+              <span><strong>Fale com a gente</strong><small><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp · (11) 99999-9999</a><br><a href="https://instagram.com/naguara.comida" target="_blank" rel="noopener">Instagram · @naguara.comida</a></small></span>
+            </div>
+          </div>
+          <div class="visit-actions">
+            <button class="btn btn--primary" type="button" data-open-cart>Montar meu pedido <span aria-hidden="true">→</span></button>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=Rua+das+Palmeiras+128+Vila+Madalena+São+Paulo" target="_blank" rel="noopener">Abrir no mapa</a>
+          </div>
+        </div>
+        <div class="visit-map reveal" aria-label="Ilustração do mapa da localização da Na'Guara">
+          <svg class="visit-map__art" viewBox="0 0 600 520" role="img" aria-label="Mapa estilizado com ruas e um pin indicando a Na'Guara">
+            <rect width="600" height="520" rx="32" fill="#eadfc9"/>
+            <path d="M-30 90 C110 30 230 170 370 100 S560 40 650 100" fill="none" stroke="#f9f4e9" stroke-width="32"/>
+            <path d="M-20 320 C120 260 260 390 420 300 S590 250 650 290" fill="none" stroke="#f9f4e9" stroke-width="26"/>
+            <path d="M105 -30 C150 100 110 240 170 330 S250 460 230 560" fill="none" stroke="#f9f4e9" stroke-width="20"/>
+            <path d="M430 -20 C400 140 470 210 450 330 S390 470 430 560" fill="none" stroke="#f9f4e9" stroke-width="24"/>
+            <path d="M280 -20 C270 100 320 200 300 300 S250 470 290 560" fill="none" stroke="#f9f4e9" stroke-width="14"/>
+            <path d="M-10 210 C110 180 230 230 350 190 S520 160 620 200" fill="none" stroke="#d9caad" stroke-width="3" stroke-dasharray="8 10"/>
+            <path d="M40 420 C140 370 250 440 350 400 S520 360 620 400" fill="none" stroke="#d9caad" stroke-width="3" stroke-dasharray="8 10"/>
+            <rect x="28" y="110" width="48" height="48" rx="12" fill="#dfd2b9"/>
+            <rect x="92" y="120" width="30" height="30" rx="7" fill="#dfd2b9"/>
+            <rect x="470" y="360" width="52" height="42" rx="10" fill="#dfd2b9"/>
+            <rect x="500" y="110" width="44" height="40" rx="9" fill="#dfd2b9"/>
+            <circle cx="286" cy="247" r="46" fill="#f8b93f" opacity=".24"/>
+            <circle cx="286" cy="247" r="30" fill="#f8b93f" opacity=".38"/>
+            <g transform="translate(286 216)">
+              <path d="M0 62C0 62 42 32 42 0A42 42 0 1 0-42 0C-42 32 0 62 0 62Z" fill="#d95332"/>
+              <circle cy="-1" r="16" fill="#fff7e8"/>
+              <circle cy="-1" r="7" fill="#2b1a12"/>
+            </g>
+            <text x="286" y="298" text-anchor="middle" font-family="Manrope, sans-serif" font-size="15" font-weight="800" fill="#2b1a12">NA'GUARA</text>
+            <text x="46" y="496" font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#8a7565" letter-spacing="2">VILA MADALENA · SP</text>
+          </svg>
+          <div class="visit-map__card">
+            <span class="visit-map__dot" aria-hidden="true"></span>
+            <span><strong>Delivery na Vila Madalena</strong><small>e arredores · cerca de 35 min</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="#topo">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img">
+              <rect width="64" height="64" rx="19" fill="#f8b93f"/>
+              <circle cx="32" cy="33" r="21" fill="#2b1a12"/>
+              <path d="M22.5 44V27.8c0-5.4 8.5-5.4 8.5 0v8.3c0 5.4 8.5 5.4 8.5 0V26.5" fill="none" stroke="#fff7e8" stroke-width="4.2" stroke-linecap="round"/>
+              <circle cx="47.5" cy="15.5" r="5" fill="#d95332"/>
+            </svg>
+          </span>
+          <span class="brand__text"><strong>Na'Guara</strong><small>Comida venezolana</small></span>
+          <span class="sr-only">— voltar ao início</span>
+        </a>
+        <p>Tequeños, arepas e o carinho de uma cozinha venezuelana no coração de São Paulo.</p>
+        <div class="social-links">
+          <a href="https://instagram.com/naguara.comida" target="_blank" rel="noopener" aria-label="Instagram da Na'Guara">
+            <svg class="icon" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+          </a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp da Na'Guara">
+            <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Cardápio</h3>
+        <a href="#menu" data-category-link="tequeños">Tequeños</a>
+        <a href="#menu" data-category-link="arepas">Arepas</a>
+        <a href="#menu" data-category-link="combos">Combos</a>
+        <a href="#menu" data-category-link="bebidas">Bebidas</a>
+      </div>
+      <div class="footer-column">
+        <h3>A Na'Guara</h3>
+        <a href="#historia">Nossa história</a>
+        <a href="#depoimentos">Avaliações</a>
+        <a href="#visite">Onde estamos</a>
+        <a href="#instalar" id="footer-install-link">Instalar o app</a>
+      </div>
+      <div class="footer-column footer-hours">
+        <h3>Horários</h3>
+        <p>Ter–Qui <span>11h30–21h</span></p>
+        <p>Sex–Dom <span>11h30–23h</span></p>
+        <p class="footer-hours__closed">Segunda <span>fechado</span></p>
+        <a class="footer-whatsapp" href="https://wa.me/5511999999999" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="current-year">2026</span> Na'Guara. Feito com fome e com amor.</p>
+      <div>
+        <a href="creditos.html">Créditos de imagens</a>
+        <a href="#topo">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-tabbar" aria-label="Navegação rápida">
+    <a href="#topo" class="mobile-tabbar__item" data-tab="inicio">
+      <svg class="icon" aria-hidden="true"><use href="#icon-home"></use></svg>
+      <span>Início</span>
+    </a>
+    <a href="#menu" class="mobile-tabbar__item" data-tab="menu">
+      <svg class="icon" aria-hidden="true"><use href="#icon-menu"></use></svg>
+      <span>Menu</span>
+    </a>
+    <button class="mobile-tabbar__item" type="button" data-open-cart data-tab="sacola">
+      <span class="mobile-tabbar__bag">
+        <svg class="icon" aria-hidden="true"><use href="#icon-bag"></use></svg>
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </span>
+      <span>Sacola</span>
+    </button>
+    <button class="mobile-tabbar__item" id="install-tab" type="button" data-tab="instalar">
+      <svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg>
+      <span>Instalar</span>
+    </button>
+  </nav>
+
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-panel">
+      <header class="cart-panel__header">
+        <div>
+          <p class="eyebrow eyebrow--tight"><span class="eyebrow__dot" aria-hidden="true"></span>Seu pedido</p>
+          <h2 id="cart-title">Minha sacola <span class="cart-panel__count" data-cart-count hidden>0</span></h2>
+        </div>
+        <button class="icon-btn icon-btn--soft" id="cart-close" type="button" aria-label="Fechar sacola">
+          <svg class="icon" aria-hidden="true"><use href="#icon-x"></use></svg>
+        </button>
+      </header>
+
+      <div class="cart-panel__body" id="cart-body">
+        <div class="cart-empty" id="cart-empty">
+          <div class="cart-empty__art" aria-hidden="true">
+            <svg viewBox="0 0 160 140">
+              <circle cx="80" cy="68" r="50" fill="#fbe8b8"/>
+              <path d="M44 62h72l-9 38H53z" fill="#d95332"/>
+              <path d="M60 62c0-24 40-24 40 0" fill="none" stroke="#2b1a12" stroke-width="7" stroke-linecap="round"/>
+              <circle cx="69" cy="81" r="3" fill="#fff7e8"/>
+              <circle cx="91" cy="81" r="3" fill="#fff7e8"/>
+              <path d="M73 91c4 5 10 5 14 0" fill="none" stroke="#fff7e8" stroke-width="3" stroke-linecap="round"/>
+              <path d="M122 40l4 9 10 2-8 7 2 10-8-5-9 5 2-10-7-7 10-2z" fill="#f8b93f"/>
+            </svg>
+          </div>
+          <h3>Sua sacola está vazia</h3>
+          <p>Escolha seus tequeños e arepas favoritos. A gente já está com a chapa quente.</p>
+          <button class="btn btn--primary" type="button" id="cart-empty-cta">Ver o menu</button>
+        </div>
+
+        <div class="cart-items" id="cart-items" hidden></div>
+      </div>
+
+      <div class="cart-checkout" id="cart-checkout" hidden>
+        <div class="fulfillment-toggle" role="group" aria-label="Forma de recebimento">
+          <button class="is-active" type="button" data-fulfillment="delivery" aria-pressed="true">
+            <svg class="icon" aria-hidden="true"><use href="#icon-scooter"></use></svg>
+            Entrega
+          </button>
+          <button type="button" data-fulfillment="pickup" aria-pressed="false">
+            <svg class="icon" aria-hidden="true"><use href="#icon-store"></use></svg>
+            Retirada
+          </button>
+        </div>
+
+        <div class="checkout-fields">
+          <label class="field">
+            <span>Seu nome</span>
+            <input id="customer-name" name="name" type="text" autocomplete="name" placeholder="Como podemos te chamar?" maxlength="60">
+          </label>
+          <label class="field" id="address-field">
+            <span>Endereço de entrega</span>
+            <input id="customer-address" name="address" type="text" autocomplete="street-address" placeholder="Rua, número, complemento e bairro" maxlength="160">
+          </label>
+        </div>
+
+        <div class="order-summary" aria-live="polite">
+          <p><span>Subtotal</span><span id="cart-subtotal">R$ 0,00</span></p>
+          <p><span id="cart-delivery-label">Entrega</span><span id="cart-delivery">R$ 6,90</span></p>
+          <p class="order-summary__total"><span>Total</span><span id="cart-total">R$ 0,00</span></p>
+        </div>
+        <p class="free-shipping-note" id="free-shipping-note" hidden></p>
+
+        <p class="checkout-error" id="checkout-error" role="alert" hidden></p>
+        <button class="btn btn--whatsapp btn--lg btn--full" id="checkout-btn" type="button">
+          <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+          Finalizar no WhatsApp
+        </button>
+        <p class="checkout-note">
+          <svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg>
+          Você será direcionado ao WhatsApp para confirmar o pedido e a forma de pagamento.
+        </p>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="install-dialog" id="install-dialog" aria-labelledby="install-dialog-title">
+    <div class="install-dialog__panel">
+      <button class="icon-btn icon-btn--soft install-dialog__close" id="install-dialog-close" type="button" aria-label="Fechar instruções">
+        <svg class="icon" aria-hidden="true"><use href="#icon-x"></use></svg>
+      </button>
+      <div class="install-dialog__icon" aria-hidden="true">
+        <svg class="icon"><use href="#icon-download"></use></svg>
+      </div>
+      <h2 id="install-dialog-title">Instale a Na'Guara</h2>
+      <p id="install-dialog-text">Adicione o app à sua tela inicial para pedir mais rápido e acessar o cardápio offline.</p>
+      <div class="install-dialog__steps" id="install-steps" hidden>
+        <div><span>1</span><p>Toque no botão <strong>Compartilhar</strong> do Safari.</p></div>
+        <div><span>2</span><p>Escolha <strong>Adicionar à Tela de Início</strong>.</p></div>
+        <div><span>3</span><p>Confirme em <strong>Adicionar</strong>. Pronto!</p></div>
+      </div>
+      <button class="btn btn--primary btn--full" id="install-dialog-action" type="button">Entendi</button>
+    </div>
+  </dialog>
+
+  <div class="offline-banner" id="offline-banner" role="status" hidden>
+    <svg class="icon" aria-hidden="true"><use href="#icon-wifi-off"></use></svg>
+    Você está offline. O cardápio continua disponível.
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
+    <span class="toast__icon" aria-hidden="true"><svg class="icon"><use href="#icon-check"></use></svg></span>
+    <span id="toast-message">Adicionado à sacola</span>
+  </div>
+
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-bag" viewBox="0 0 24 24"><path d="M6.5 8.5h11l1 11.5h-13l1-11.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 9V7a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="icon-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-arrow-down-right" viewBox="0 0 24 24"><path d="M7 7l10 10M17 9v8H9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="icon-minus" viewBox="0 0 24 24"><path d="M5 12h14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="icon-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M5 7h14M9 7V5h6v2M7 7l1 12h8l1-12M10 10v6M14 10v6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 4v10m0 0 4-4m-4 4-4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-flame" viewBox="0 0 24 24"><path d="M12.5 3.5c.3 3.8-4.9 5.6-4.9 10.1a4.4 4.4 0 0 0 8.8 0c0-2.2-1-3.5-2.2-5.2-.4 1.8-1.4 2.3-2.3 2.7.8-2.6.8-4.8.6-7.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-wheat" viewBox="0 0 24 24"><path d="M12 21V8m0 0c-2.8 0-4-1.4-4-4 2.8 0 4 1.4 4 4Zm0 0c2.8 0 4-1.4 4-4-2.8 0-4 1.4-4 4Zm0 4c-2.8 0-4-1.4-4-4 2.8 0 4 1.4 4 4Zm0 0c2.8 0 4-1.4 4-4-2.8 0-4 1.4-4 4Zm0 4c-2.8 0-4-1.4-4-4 2.8 0 4 1.4 4 4Zm0 0c2.8 0 4-1.4 4-4-2.8 0-4 1.4-4 4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-cheese" viewBox="0 0 24 24"><path d="m4 8 16-3v14H4V8Zm0 0 16 4M4 8l16 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="10" cy="14" r="1.2" fill="currentColor"/><circle cx="15" cy="16" r="1" fill="currentColor"/><circle cx="8" cy="17" r=".8" fill="currentColor"/></symbol>
+    <symbol id="icon-scooter" viewBox="0 0 24 24"><circle cx="6" cy="17" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="18.5" cy="17" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 17h7.5M16 17l-2-9h-2M14 8h4m-4 4h3.5m-9.5-3H6.5v5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M20 4C12 4 5 7 5 13a5 5 0 0 0 5 5c6 0 9-7 10-14ZM5 21c1-5 4-8 9-11" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 11v5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><circle cx="12" cy="8" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-11.2 6.6L4 20l1.6-4.4A7.5 7.5 0 1 1 20 11.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 14c1.8 2 5.2 2 7 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M8.2 4.5 6.6 3H4.2C3.3 8.8 8.5 17 15 20.2c2.4 1.2 4.3.7 5-1.9l.4-1.5-4.3-2-1.2 1.8c-3-1.4-5.4-4-6.6-7l1.8-1.1-1.9-4Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M20.2 11.8a8.1 8.1 0 0 1-12 7.2L4 20l1.1-4a8.1 8.1 0 1 1 15.1-4.2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.2 8.4c.3-.6.7-.7 1.1-.7.3 0 .6.1.8.6l.6 1.4c.1.3 0 .6-.2.8l-.6.7c.5 1.1 1.4 2 2.5 2.5l.8-.7c.2-.2.5-.3.8-.2l1.5.7c.4.2.5.5.5.8 0 .4-.2 1-.7 1.3-.5.4-1.2.6-2 .4-1.3-.3-2.8-1.1-4.1-2.4S8.4 11.4 8.1 10c-.2-.7 0-1.4.4-1.9Z" fill="currentColor"/></symbol>
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="m4 10 8-6 8 6v10H4V10Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.5 20v-6h5v6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-store" viewBox="0 0 24 24"><path d="M4 9h16l-1-4H5L4 9Zm1 0v10h14V9M9 19v-5h6v5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-wifi-off" viewBox="0 0 24 24"><path d="M3 7.5A14.5 14.5 0 0 1 8 5.1M13.5 5.2A14.5 14.5 0 0 1 21 7.5M5.5 11a10 10 0 0 1 3-1.5M15.5 9.6a10 10 0 0 1 3 1.4M9 14.3a5.5 5.5 0 0 1 6 0M12 18h.01M3 3l18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2-5.5-3-5.5 3 1-6.2L3 9.6l6.2-.9L12 3Z" fill="currentColor"/></symbol>
+  </svg>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{
+  "id": "/",
+  "name": "Na'Guara — Comida Venezuelana",
+  "short_name": "Na'Guara",
+  "description": "Tequeños crocantes, arepas feitas na hora e o sabor de casa. Delivery em São Paulo ou retirada na loja.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "any",
+  "background_color": "#fbf3e6",
+  "theme_color": "#f8b93f",
+  "categories": ["food", "shopping", "lifestyle"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshots/mobile.webp",
+      "sizes": "390x844",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Cardápio da Na'Guara no celular"
+    },
+    {
+      "src": "assets/screenshots/desktop.webp",
+      "sizes": "1280x800",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Página inicial da Na'Guara no computador"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ver cardápio",
+      "short_name": "Cardápio",
+      "description": "Abrir os tequeños, arepas e combos da Na'Guara",
+      "url": "./?open=menu",
+      "icons": [
+        {
+          "src": "assets/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Minha sacola",
+      "short_name": "Sacola",
+      "description": "Revisar os itens e finalizar o pedido",
+      "url": "./?open=cart",
+      "icons": [
+        {
+          "src": "assets/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

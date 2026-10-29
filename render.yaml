@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: naguara
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    headers:
+      - path: /sw.js
+        name: Cache-Control
+        value: no-cache, no-store, must-revalidate
+      - path: /index.html
+        name: Cache-Control
+        value: no-cache, must-revalidate
+      - path: /offline.html
+        name: Cache-Control
+        value: no-cache, must-revalidate
+      - path: /manifest.json
+        name: Cache-Control
+        value: no-cache, must-revalidate
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=2592000
+      - path: /css/*
+        name: Cache-Control
+        value: public, max-age=0, must-revalidate
+      - path: /js/*
+        name: Cache-Control
+        value: public, max-age=0, must-revalidate
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN

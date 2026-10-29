@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Na'Guara — Você está offline</title>
+  <meta name="theme-color" content="#f8b93f">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="offline-page">
+  <main class="offline-page__main">
+    <a class="brand offline-page__brand" href="./">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" role="img">
+          <rect width="64" height="64" rx="19" fill="#f8b93f"/>
+          <circle cx="32" cy="33" r="21" fill="#2b1a12"/>
+          <path d="M22.5 44V27.8c0-5.4 8.5-5.4 8.5 0v8.3c0 5.4 8.5 5.4 8.5 0V26.5" fill="none" stroke="#fff7e8" stroke-width="4.2" stroke-linecap="round"/>
+          <circle cx="47.5" cy="15.5" r="5" fill="#d95332"/>
+        </svg>
+      </span>
+      <span class="brand__text"><strong>Na'Guara</strong><small>Comida venezolana</small></span>
+      <span class="sr-only">— voltar ao início</span>
+    </a>
+    <div class="offline-page__art" aria-hidden="true">
+      <svg viewBox="0 0 190 155">
+        <circle cx="95" cy="77" r="60" fill="#fbe8b8"/>
+        <circle cx="95" cy="77" r="44" fill="#f8b93f"/>
+        <path d="M57 76h76l-10 44H67z" fill="#d95332"/>
+        <path d="M75 76c0-26 40-26 40 0" fill="none" stroke="#2b1a12" stroke-width="7" stroke-linecap="round"/>
+        <path d="M84 92c7 8 15 8 22 0" fill="none" stroke="#fff7e8" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="127" cy="40" r="16" fill="#2b1a12"/>
+        <path d="M120 47V37c0-4 6-4 6 0v5c0 4 6 4 6 0v-5" fill="none" stroke="#fff7e8" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <p class="eyebrow offline-page__eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Sem conexão</p>
+    <h1>O sabor continua <em>aqui</em>.</h1>
+    <p class="offline-page__text">Você está offline, mas o cardápio da Na'Guara já está salvo no seu dispositivo. Para enviar o pedido pelo WhatsApp, reconecte-se à internet.</p>
+    <div class="offline-page__actions">
+      <button class="btn btn--primary btn--lg" type="button" onclick="window.location.reload()">Tentar novamente</button>
+      <a class="btn btn--soft btn--lg" href="./">Voltar ao início</a>
+    </div>
+    <p class="offline-page__foot">Na'Guara · tequeños e arepas feitos com amor</p>
+  </main>
+</body>
+</html>
